@@ -39,6 +39,18 @@ public class MainCliente {
         
         System.out.println("Saldo = R$ "+conta.consultarSaldoDisponivel());
 
+        Conta conta2 = new Conta();
+        conta2.numero = 2;
+        conta2.saldo = 100;
+        
+        conta.transferir(conta2, 10);
+
+        System.out.println("Transferencia realizada para conta 2");
+
+        System.out.println("Saldo atual da conta 2: R$" + conta2.consultarSaldoDisponivel());
+
+        System.out.println("Saldo = R$ "+conta.consultarSaldoDisponivel());
+
         int opcao = 2;
 
         while(opcao != 0 && opcao != 1){
