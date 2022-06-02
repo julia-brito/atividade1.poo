@@ -34,14 +34,14 @@ public class MainCliente {
         String dados = c.retornarDados();
         System.out.println(dados);
 
-        conta.depositar(250);
-        conta.sacar(100);
+        conta.depositar(450);
+        conta.sacar(200);
         
         System.out.println("Saldo = R$ "+conta.consultarSaldoDisponivel());
 
         Conta conta2 = new Conta();
         conta2.numero = 2;
-        conta2.saldo = 100;
+        conta2.saldo = 380;
         
         conta.transferir(conta2, 10);
 
